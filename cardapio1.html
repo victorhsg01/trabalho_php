@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu do Restaurante</title>
+</head>
+<body>
+  <div class="menu">
+
+
+
+    
+    <h1>ℒ𝒶 𝒟ℴ𝓁𝒸ℯ 𝒱𝒾𝓉𝒶 ℳℯ𝓃𝓊</h1>
+    <div class="menu-items"></div>
+  </div>
+  <script src="js/scripts.js"></script>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-65deg, #278888, #359191, #f8f8f8);
+}
+
+.menu {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu h1 {
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 200px; /* Largura dos itens */
+  text-align: center;
+  border-radius: 10px;
+}
+
+.menu-item img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.menu-item h2 {
+  margin-top: 10px;
+}
+
+.menu-item p {
+  margin-top: 5px;
+}
+
+.menu-item span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+  </style>
+</body>
+</html>

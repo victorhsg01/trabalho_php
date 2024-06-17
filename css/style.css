@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-65deg, crimson,  #e2a42d, #8b5742);
+  }
+  
+  .titulo-principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Cor de fundo do título */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    padding: 20px 0; /* Espaçamento interno do título */
+    margin: 0; /* Remova qualquer margem padrão */
+    z-index: 9999; /* Garante que o título esteja acima de outros elementos */
+    background: transparent;
+  }
+  
+  .menu {
+      display: block;
+      position: relative;
+      width: 280px;
+      height: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .menu li {
+      position: absolute;
+      left: calc(50% - 30px);
+      list-style: none;
+      transform-origin: 140px;
+      transition: .5s;
+      transform: rotate(0);
+      transition-delay: calc(.1s * var(--i));
+      visibility: hidden;
+  }
+  
+  .menu.active li {
+      transform: rotate(calc(45deg * var(--i)));
+      left: 0;
+      visibility: visible;
+  }
+  
+  .menu li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      width: 60px;
+      height: 60px;
+      transform: rotate(calc(-45deg * var(--i)));
+      border: 2px solid var(--clr);
+      color: var(--clr);
+      border-radius: 50%;
+      transition: 1s;
+  }
+  
+  .menu li a:hover{
+      transition: 0s;
+      background: var(--clr);
+      color: #040305;
+      box-shadow: 0 0 10px var(--clr),
+      0 0 30px var(--clr),
+      0 0 50px var(--clr);
+  }
+  
+  .menu .toggle {
+      width: 60px;
+      height: 60px;
+      background: #040305;
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 2em;
+      z-index: 10;
+      transition: .5s;
+  }
+  
+  menu.active .toggle {
+      background: #fff;
+      color: #040305;
+  }
+  
+  .menu.active .toggle {
+      transform: rotate(315deg);
+  }
+
+  /*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+  footer {
+    position: fixed; /* ou absolute, dependendo do que você deseja */
+    bottom: 20px; /* Distância da parte inferior da janela do navegador */
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translateX(-50%); /* Centralizando horizontalmente */
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333; /* Cor padrão dos ícones */
+    font-size: 24px; /* Tamanho padrão dos ícones */
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #25D366; /* Cor do WhatsApp ao passar o mouse */
+  }
+  
+  .social-link.whatsapp:hover {
+    color: #25D366; /* Cor do WhatsApp ao passar o mouse */
+  }
+  
+  .social-link.instagram:hover {
+    color: #C13584; /* Cor do Instagram ao passar o mouse */
+  }
+  
+  .social-link.twitter:hover {
+    color: #1DA1F2; /* Cor do Twitter ao passar o mouse */
+  }
+  
+  .social-link.facebook:hover {
+    color: #3b5998; /* Cor do Facebook ao passar o mouse */
+  }
+
+  /* carrossel */
